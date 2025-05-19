@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/postTypeGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp">
+
+        <RadioButton
+                android:id="@+id/radioLost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Lost"/>
+
+            <RadioButton
+                android:id="@+id/radioFound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Found"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:hint="Name"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/phoneInput"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/descriptionInput"
+            android:hint="Description"
+            android:minHeight="48dp"
+            android:minLines="2"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/dateInput"
+            android:hint="Date"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/locationInput"
+            android:hint="Location"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE" />
+
+        <Button
+            android:id="@+id/getCurrentLocationButton"
+            android:minHeight="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GET CURRENT LOCATION" />
+
+    </LinearLayout>
+</ScrollView>
